@@ -1,63 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vasya Calculator</title>
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-display">
+        <h1>0</h1>
+        <div></div>
+        <h1>0</h1>
+      </div>
+      <div class="calculator-button">
+        <button class="delete" value="DEL">DEL</button>
+        <button class="operator" value="+">+</button>
+        <button class="operator" value="-">-</button>
+        <button class="operator" value="*">*</button>
+        <button class="operator" value="/">/</button>
+        <button class="operation" value="sqrt">&radic;x</button>
+        <button class="operation" value="sqr">
+          x<span class="upper">2</span>
+        </button>
+        <button class="operation" value="^-1">
+          x<span class="upper">-1</span>
+        </button>
+        <button class="plusOrMinus" value="+/-">+/-</button>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1 user-scalable=no, shrink-to-fit=no">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
 
-  gtag('config', 'UA-70447982-5');
-</script>
-</head>
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
 
-<body>
-	<div class="container">
-		<div class="calculator">
-			<input type="text" name="screen" id="answer" readonly>
-			<table>
-				<tr>
-					<td><button>C</button></td>
-					<td><button>
-						<img style="filter: invert(50%) sepia(0%) saturate(4%) hue-rotate(159deg) brightness(90%) contrast(81%);" src="./svg/Union.svg" alt="">
-					</button></td>
-					<td><button>%</button></td>
-					<td><button>/</button></td>
-				</tr>
-				<tr>
-					<td><button>7</button></td>
-					<td><button>8</button></td>
-					<td><button>9</button></td>
-					<td><button>X</button></td>
-				</tr>
-				<tr>
-					<td><button>4</button></td>
-					<td><button>5</button></td>
-					<td><button>6</button></td>
-					<td><button>-</button></td>
-				</tr>
-				<tr>
-					<td><button>1</button></td>
-					<td><button>2</button></td>
-					<td><button>3</button></td>
-					<td><button>+</button></td>
-				</tr>
-				<tr>
-					<td><button>0</button></td>
-					<td><button>.</button></td>
-					<td><button>/</button></td>
-					<td><button>=</button></td>
-				</tr>
-			</table>
-	</div>
-    <div id="turn">
-    PLEASE TURN YOUR DEVICE
-	</div>
-</body>
-<script src="calc.js"></script>
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+
+        <button value="0">0</button>
+        <button class="decimal" value=".">.</button>
+        <button class="clear" id="clear-btn">C</button>
+        <button class="equal-sign operator" value="=">=</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
 </html>

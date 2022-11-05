@@ -1,21 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background: rgb(0, 216, 216);
 }
 
@@ -25,7 +19,6 @@ body {
   background: rgb(105, 50, 255);
   border: 5px solid black;
 }
-
 .calculator-display {
   background: #8dccff;
   color: #790000;
@@ -38,7 +31,7 @@ body {
   margin: 0;
   padding: 25px;
   font-size: 45px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 100;
   overflow-x: auto;
 }
@@ -52,7 +45,7 @@ body {
 
 .equal-sign {
   grid-column: -2;
-  grid-row: 2/span 4;
+  grid-row: 2 / span 4;
   border-radius: 20px;
 }
 
@@ -69,13 +62,11 @@ button {
 }
 
 button:hover {
-  -webkit-filter: brightness(110%);
-          filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 button:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
 }
 
 button:focus {
@@ -90,12 +81,11 @@ button:focus {
 }
 
 .clear:hover {
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  filter: brightness(90%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and(max-width:600px) {
   .calculator {
     width: 95%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
